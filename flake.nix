@@ -3,6 +3,7 @@
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
   inputs.flake-parts.url = "github:hercules-ci/flake-parts";
+  inputs.flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
 
   outputs = inputs:
       inputs.flake-parts.lib.mkFlake { inputs = inputs; } {
